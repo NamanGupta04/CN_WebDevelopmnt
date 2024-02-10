@@ -1,0 +1,52 @@
+package objectorientedprogramming;
+
+public class Student {
+	
+	public String name;
+    final private int rollNumber;
+    double cgpa;
+    final double converisonFactor= 0.95;
+    static int numStudents;
+
+    public Student(String name, int rollNumber){
+      this.name=name;
+      this.rollNumber= rollNumber;
+      numStudents++;
+    }
+
+	public int getRollNumber() {
+		return this.rollNumber;
+	}
+	
+//	public void setRollNumber(int rollNumber) {
+//		if (rollNumber<=0){
+//			return;
+//		}
+//		this.rollNumber = rollNumber;
+//	}
+	
+	public void setName(String name){
+		this.name = name;
+		return;
+		
+	}
+	
+	public String getName() {
+		return this.name;
+	}
+	int a; 
+    int b; 
+
+
+	public void set(int a,int b)
+		{
+	        b = a; 
+	        this.b = b;  
+		}
+	    void display() 
+	    { 
+	        System.out.println("a=" + a + " b=" + b); 
+	    } 
+}
+
+

@@ -1,0 +1,12 @@
+package objectorientedprogramming;
+
+public class StudentUse {
+	Student s1 = new Student();
+	Student s2 = new Student();
+	
+	s1.name = "Naman";
+	s1.rollNumber = 001;
+	
+	System.out.println(s1.name+" "+s1.rollNumber);
+	
+}

@@ -1,0 +1,28 @@
+package objectorientedprogramming;
+
+public class StudentUse {
+	
+	public static void main(String[] args) {
+		Student s1 = new Student();
+		Student s2 = new Student();
+		s1.name = "Naman";
+		s1.rollNumber = 001;
+	
+		//System.out.println(s1.name+" "+s1.rollNumber);
+		s1.setRollNumber(120);
+		s1.getRollNumber();
+		//System.out.println(s1.rollNumber);
+		System.out.println(s1.name+" "+s1.rollNumber);
+		
+		s2.setRollNumber(110);
+		s2.setName("Ayush");
+		
+		System.out.println(s2.getName() + " " + s2.getRollNumber());
+		
+		Student object = new Student();
+        object.set(10,20);
+        object.display(); 
+		}
+		
+}
+
